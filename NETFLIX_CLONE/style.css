@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 98.9vw;
+}
+body{
+    background-color: black;
+    min-height: 450vh;
+}
+main{
+    background-image: url("assets/images/bg.jpeg");
+    background-repeat: no-repeat;
+    background-position: center top -22px;
+    background-size: cover;
+    overflow-x: hidden ;
+    
+    height: 100vh;
+    width: 100vw;
+
+}
+main .box{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    
+}
+nav{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-left: 13vw;
+}
+nav span img{
+    color: rgb(250,15,12);
+    width: 9.5vw;
+    position: relative;
+    top: 2.5vh;
+    right: 3.4vw;
+    z-index: 6;
+
+}
+.one{
+    position: relative;
+    top: 1.45vw;
+    z-index: 6;
+    border: 1.5px solid grey;
+    background-color: rgb(37, 37, 37 , 0.1);
+    color: white;
+    font-size: 16px;
+    width: 7.7vw;
+    height: 32px;
+    margin-left: 52.5vw;
+    margin-top: 1.5vh;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.one::before{
+    content: "";
+    position: absolute;
+    top: -4px;    /* Adjust karo, kitna bahar chahiye */
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 2px solid white; 
+    border-radius: 7px;
+    z-index: -1; 
+}
+    
+.two{
+    position: relative;
+    margin-left: 61vw;
+    margin-top: -2.0vh;
+    width: 5.3vw;
+    height: 4.5vh;
+    border-radius: 5px;
+    background-color: red;
+    border: 0px solid red;
+    color: white;
+    font-weight: 550;
+    font-size: 16px;
+    z-index: 6;
+}
+.content{
+    position: relative;
+    z-index: 6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    margin-top: 31vh;
+}
+.content> :first-child{
+    font-size: 3.2vw;
+    font-weight: 900; 
+    transform: scaleY(1.15);  
+}
+.content> :nth-child(2){
+    font-size: 3.1vw;
+    font-weight: 800;
+    transform: scaleY(1.2);  
+}
+.content> :nth-child(3){
+    margin-top: 20px;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.content button{
+    position: relative;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-top: 35px;
+    height: 55px;
+    width: 250px;
+    border: 0px solid red;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+.content button:hover{
+    background-color: rgb(97, 20, 18);
+    color: #999;
+}
+.seperation{
+    position: relative;
+    z-index: 10;
+    height: 3px;
+    width: 100vw;
+    background-color: grey;
+    
+}
+.trending{
+    position: relative;
+    z-index: 10;
+    font-family: sans-serif;
+    font-size: 2.0vw;
+    font-weight: 450;
+    color: rgb(240, 238, 238);
+    margin-top: 5vh;
+    margin-left: 10vw;
+    text-shadow: 0.8px 0.8px 0.8px white;
+    text-decoration-color: white;
+}
+.movies{
+    margin-top: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    flex-wrap: wrap;
+}
+.movie1 img ,.movie2 img,.movie3 img,.movie4 img{
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
+}
+.counting{
+    display: flex;
+    font-size: 10vh;
+    gap: 15vw;
+    margin-left: 22vw;
+    color : white;
+    font-weight: 500;
+
+}
+.movie1:hover{
+    transition: transform 0.15s ease-out 0.07s;
+    transform: scale(1.05);
+}
+.movie2:hover{
+    transition: transform 0.15s linear 0.07s;
+    transform: scale(1.05);
+}
+.movie3:hover{
+    transition: transform 0.15s linear 0.07s;
+    transform: scale(1.05);
+}
+.movie4:hover{
+    transition: transform 0.15s linear 0.07s;
+    transform: scale(1.05);
+}
+
+.seperation2{
+    position: relative;
+    z-index: 10;
+    height: 3px;
+    width: 100vw;
+    background-color: rgb(67, 66, 66);
+    margin-top: 7vh;
+    
+}
+.reason{
+    position: relative;
+    z-index: 10;
+    font-family: sans-serif;
+    font-size: 1.8vw;
+    font-weight: 400;
+    color: rgb(250, 248, 248);
+    margin-top: 10vh;
+    margin-left: 10vw; 
+    text-shadow: 1px 1px 1px white;
+    text-decoration-color: white;
+
+}
+.grid-container {
+    display: grid; /* Grid layout activate karna */
+    grid-template-columns: repeat(4, 1fr); /* 3 columns, har column equal width (1fr) */
+    grid-gap: 15px; /* Grid items ke beech gap */
+    padding: 10px; /* Container ke andar padding */
+    margin: 0 8.5vw;
+}
+
+.grid-item1,.grid-item2,.grid-item3,.grid-item4 {
+    margin-top: 20px;
+    background-color: #ccc;
+    padding: 20px;
+    text-align: start;
+    font-size: 1.5em;
+    border: 0px solid #999;
+    border-radius: 10px;
+    height: 35vh;
+    background-color: #1d1831;
+  }
+  .grid-item1 h1 ,.grid-item2 h1,.grid-item3 h1,.grid-item4 h1  {
+    color: rgb(226, 223, 223);
+    display: flex;
+    align-items: left;
+    justify-content: top;
+    flex-direction: column;
+    margin-top: 1px;
+    font-size: 2vw;
+    font-family: sans-serif;
+  }
+  .grid-item1 h2 ,.grid-item2 h2,.grid-item3 h2,.grid-item4 h2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    color: rgb(192, 189, 189);
+    margin-top: 35px;
+    font-size: 1.0vw;
+    font-family: sans-serif;
+
+  }
+  .faq{
+    position: relative;
+    z-index: 10;
+    font-family: sans-serif;
+    font-size: 1.6vw;
+    font-weight: 300;
+    color: rgb(240, 237, 237);
+    margin-top: 10vh;
+    margin-left: 10vw;
+    text-shadow: 0.5px 0.5px 0.5px white;
+    text-decoration-color: rgb(236, 236, 236);
+
+  }
+  .question1,.question2,.question3,.question4,.question5{
+    width: 77vw;
+    height: 6vh;
+    background-color: rgb(42, 41, 41);
+    color: rgb(236, 234, 234);
+    margin-top: 2.2vh;
+    margin-left:10vw;
+  }
+  .question1,.question2,.question3,.question4,.question5{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.4vw;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 10;
+    padding: 20px ;
+
+  }
+  .question1:hover{
+    transition: transform 0.15s linear;
+    /* transform: scale(1.01); */
+    background-color: rgb(57, 57, 57) ;
+    
+}
+.question2:hover{
+    transition: transform 0.15s linear;
+    /* transform: scale(1.001); */
+    background-color: rgb(57, 57, 57) ;
+    
+}
+.question3:hover{
+    transition: transform 0.15s linear;
+    /* transform: scale(1.01); */
+    background-color: rgb(57, 57, 57) ;
+
+  }
+.question4:hover{
+    transition: transform 0.15s linear;
+    /* transform: scale(1.01); */
+    background-color: rgb(57, 57, 57) ;
+
+  }
+.question5:hover{
+    transition: transform 0.15s linear;
+    /* transform: scale(1.01); */
+    background-color: rgb(57, 57, 57) ;
+
+  }
+  .signup button {
+    height: 8vh;
+    width: 35vh;
+    margin-top: 10vh;
+    background-color:red ;
+    margin-left: 10vw;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: larger;
+    color: white;
+    font-weight: 600;
+}
+
+.footerdiv{
+    color: rgb(181, 180, 180);
+    margin-left: 10vw;
+    margin-top: 10vh;
+
+  }
+  .gridcontainer2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns banane ke liye */
+    gap: 5x;                           /* Box ke beech gap */
+    padding: 10px;
+    margin-left: 1vw;
+    
+
+  }
+  
+  .grid-item {
+color: rgba(255, 255, 255, 0.7); 
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    width: 250px;
+    text-decoration: underline;
+
+  }
+ .button2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 4.5vh;
+    border-radius: 5px;
+    border: 2px solid grey;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    
+}
+.last{
+     margin-left: 10vw;
+     margin-top: 4vh;
+     color: rgb(215, 210, 210);
+
+ }
